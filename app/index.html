@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Platinum Audit — The Leonida 55 · GTA VI Trophy Guide and Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header id="app-header">
+  <div id="brand-block">
+    <h1 id="app-title">Platinum Audit — The Leonida 55</h1>
+    <p id="app-subtitle">GTA VI trophy guide &amp; tracker · every claim cited · fully offline</p>
+  </div>
+  <div id="progress-block">
+    <div id="earned-summary">0 / 55 earned</div>
+    <div id="grade-summary">P 0 · G 0 · S 0 · B 0</div>
+    <div id="collectibles-summary">0 collectibles logged</div>
+  </div>
+  <div id="header-actions">
+    <label id="spoiler-toggle-label"><input type="checkbox" id="spoiler-shield-toggle"> Spoiler shield</label>
+    <button id="export-progress-button" type="button">Export</button>
+    <button id="import-progress-button" type="button">Import</button>
+    <input type="file" id="import-progress-file" accept=".json,application/json" hidden>
+    <span id="saved-note">Saved in this browser</span>
+  </div>
+</header>
+<div id="audit-strip" aria-label="Audit totals computed from the guide data"></div>
+<nav id="view-tabs" aria-label="Guide views">
+  <button type="button" class="view-tab is-active" data-view-tab="tracker">Tracker</button>
+  <button type="button" class="view-tab" data-view-tab="roadmap">Roadmap</button>
+  <button type="button" class="view-tab" data-view-tab="missables">Missables</button>
+  <button type="button" class="view-tab" data-view-tab="sources">Sources</button>
+</nav>
+<main id="tracker-view" class="app-view">
+  <section id="checklist-pane" aria-label="Trophy checklist">
+    <div id="filter-bar">
+      <div id="kind-filter-chips"></div>
+      <div id="grade-filter-chips"></div>
+      <input type="search" id="trophy-search-box" placeholder="Search trophies…" aria-label="Search trophies">
+    </div>
+    <div id="checklist-scroll"></div>
+  </section>
+  <section id="guide-detail-pane" aria-label="Selected trophy guide"></section>
+  <aside id="right-rail" aria-label="Next up and sources">
+    <div id="next-up-panel"></div>
+    <div id="guide-sources-panel"></div>
+  </aside>
+</main>
+<main id="roadmap-view" class="app-view" hidden></main>
+<main id="missables-view" class="app-view" hidden></main>
+<main id="sources-view" class="app-view" hidden></main>
+<footer id="app-footer">Platinum Audit — an unofficial, original fan guide. Trophy names, descriptions and grades are the official PlayStation 5 list. Source paths are shown as text for citation only; this app makes no network requests.</footer>
+<script src="app.js"></script>
+</body>
+</html>
